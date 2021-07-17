@@ -7,8 +7,8 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 function Ecom() {
     return (
         <>
+        <Router >
         <Header/>
-        <Router>
            <Switch>
     <Route exact path='/' component={Home}></Route>
     <Route exact path='/cart' component={Cart}></Route>

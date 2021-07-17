@@ -1,17 +1,15 @@
-import { products } from "./data";
+
 let initialState = {
-    products,
-    cart:0
+    value:0,
+    item:[]
 }
-function BallReducer(state = initialState,
+function CartReducer(state = initialState,
     action) {
     switch (action.type) {
         case "add_task":
-            console.log("clicked");
-            let cartadd=state.cart
+            let cartadd=state.value
     return{
-        products:state.products,
-        cart:cartadd+1
+        value:cartadd+1
     }
        
         default:
@@ -19,4 +17,4 @@ function BallReducer(state = initialState,
     }
     // console.log("in store",action);
 }
-export default BallReducer
+export default CartReducer

@@ -1,5 +1,6 @@
-import { createStore } from "redux";
-import cartReducer from "./cartReducer"
-const store = createStore(cartReducer);
+import {  createStore } from "redux";
+
+import rootReducing from "./rootReducing";
+const ecomStore = createStore(rootReducing);
 // console.log(store);
-export default store;
+export default ecomStore;
